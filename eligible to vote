@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	// check voting eligibity
+	//user input age:int
+	//if age>18 eligible in India
+	//if age>17 eligible in USA
+    //if age>21 eligible in Israel
+    //take user age as input: int
+    
+    int age;
+    cin >> age;
+    
+    //check for conditions
+    //age>21 eligible in all cases 
+    //age>18 eligible in Israel and India
+    //age>17 eligible in USA
+    //using ternary operator
+    (age > 21)?cout << "eligible in USA ,India and Israel\n";
+    	:{(age>18)?cout << "eligible in India and Israel\n";
+        :{(age>17)?cout <<"eligible in USA\n";
+        :cout <<"eligible nowhere\n"}};
+    	
+    }
+	return 0;
+}
