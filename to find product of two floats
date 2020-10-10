@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// take two floats from the user
+	//declare two floats
+	float num1,num2;
+	
+	//take input in those variables from user
+	cin >> num1 >>num2;
+	float result=num1*num2;
+	
+	//cout the product
+	cout << result;
+	return 0;
+}
