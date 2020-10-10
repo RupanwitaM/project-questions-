@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// to find the size of int,char,float and double
+	//to use sizeof()
+	int myint;
+	cout<< sizeof(myint);
+	
+	char mychar;
+	cout<< sizeof(mychar);
+	
+	float myfloat;
+	cout<< sizeof(myfloat);
+	
+	double mydouble;
+	cout<< sizeof(mydouble);
+	
+	return 0;
+}
