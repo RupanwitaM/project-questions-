@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool Primecheck(int n);
+bool Primecheck(int num);
 
 int main() {
 	// check if a number can be expressed as sum of 2 prime numbers
