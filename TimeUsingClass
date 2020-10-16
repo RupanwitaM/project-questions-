@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+// This time does not contain date
+class myTime {
+	// Data - properties - variables
+	// What are you storing here
+	int hours;
+	int minutes;
+	int seconds;
+	
+	// Functions - actions - behaviour
+	// What CAN you do with this data
+	public:
+	void takeInput() {
+		cout << "Enter time:\n";
+		cout << "Enter hours: ";
+		int hours;
+		cin >> this->hours; 
+		cout << "Enter minutes: ";
+		cin >> minutes;
+		cout << "Enter seconds: ";
+		cin >> seconds;
+	}
+	void printTimeInSeconds(){
+		cout << "The total time in seconds : " 
+			 << (60*60*hours) + (60*minutes) + seconds << endl; // numberOfSeonds is the number of seconds
+	}
+	void printFullTime() {
+		cout << "The time is : " << hours 
+			 << ":" << minutes << ":" << seconds << endl; // "something" should be in the form HH:MM:SS
+	}
+};
+
+int main() {
+	// take input in the form of 
+	// HH:MM:SS
+	// output total number of seconds
+	
+	
+	// Input
+	myTime t;
+	t.takeInput();
+	
+ //processing shown above inside the class
+	
+	
+	// Output
+	t.printFullTime();
+	t.printTimeInSeconds();
+	return 0;
+}
